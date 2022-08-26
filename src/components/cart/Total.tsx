@@ -15,10 +15,10 @@ export default function Total({ allItems, tempCart }: any) {
     keys.push(key);
   }
 
-  useEffect(() => {
-    getTotal();
-    setTotalFlag(!totalFlag);
-  }, [totalFlag]);
+  // useEffect(() => {
+  //   getTotal();
+  //   setTotalFlag(!totalFlag);
+  // }, [totalFlag]);
 
   function getTotal(): number {
     return keys.reduce((a: any, b: any) => {
