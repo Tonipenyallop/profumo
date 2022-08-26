@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 install ts node for typescript
 ```npm i gotta check ```
+
+DO NOT FORGET TO CONFIG VAR
+```PGSSLMODE : no-verify```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
