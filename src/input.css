@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply mx-3 my-3 py-3 px-3 border-2 border-black transition-all duration-300 hover:text-white hover:bg-black hover:rounded-xl;
+  }
+  .white-icon {
+    @apply mx-3 my-3 py-3 px-3 border-white transition-all duration-300 bg-transparent text-white hover:bg-white hover:text-black hover:rounded-xl;
+  }
+  .white-button {
+    @apply mx-3 my-3 py-3 px-3 border-2 border-white transition-all duration-300 bg-transparent text-white hover:bg-white hover:text-black hover:rounded-xl;
+  }
+  .description {
+    @apply flex items-center justify-center break-words max-w-xs  transition-all  duration-1000 overflow-scroll bg-yellow-300;
+  }
+  .seasons {
+    @apply flex text-white justify-start;
+  }
+  .menubar-text {
+    @apply text-gray-400 mx-3 my-3 py-5 text-3xl cursor-pointer hover:text-white transition-all duration-300;
+  }
+}
+
+/* .bg-img {
+  background-image: url(./images/luxury-bg.jpeg);
+} */
+.bg-spraying {
+  background-image: url(./images/applying-cologne.webp);
+}
