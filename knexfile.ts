@@ -1,4 +1,3 @@
-// Update with your config settings.
 import type { Knex } from "knex";
 import dotenv from 'dotenv'
 dotenv.config()
@@ -29,12 +28,7 @@ dotenv.config()
   production: {
     client: 'postgresql',
     connection : process.env.DB_URI,
-    // connection: {
-    //   database: process.env.DB_NAME,
-    //   user: process.env.DB_USER,
-    //   password: process.env.PASSWORD,
-    //   port: process.env.PORT as unknown as number
-    // },
+    
     pool: {
       min: 2,
       max: 10
