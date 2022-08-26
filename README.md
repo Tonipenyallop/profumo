@@ -5,6 +5,11 @@ install ts node for typescript
 DO NOT FORGET TO CONFIG VAR
 ```PGSSLMODE : no-verify```
 
+Adding PORT as a config var make occur bug on heroku
+
+
+
+# Config vars
 DB_USER
 DB_URI
 MODE
