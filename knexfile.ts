@@ -1,9 +1,10 @@
 // Update with your config settings.
+import type { Knex } from "knex";
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-module.exports = {
+ const config: { [key: string]: Knex.Config } = {
 
   
 
@@ -29,7 +30,7 @@ module.exports = {
       database: process.env.DB_NAME,
       user: process.env.DB_USER,
       password: process.env.PASSWORD,
-      port: process.env.PORT
+      // port: process.env.PORT
     },
     pool: {
       min: 2,
@@ -41,3 +42,5 @@ module.exports = {
   }
 
 };
+
+module.exports = config
