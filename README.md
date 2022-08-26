@@ -4,6 +4,14 @@ install ts node for typescript
 
 DO NOT FORGET TO CONFIG VAR
 ```PGSSLMODE : no-verify```
+
+DB_USER
+DB_URI
+MODE
+STRIPE_SECRET_KEY
+PORT
+WEB_URL
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
