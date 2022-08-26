@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import TopCartButton from "../Card/TopCartButton";
-import Count from "./Count";
 import HomeSummer from "./HomeSummer";
 import HomeTop from "./HomeTop";
 import HomeWinter from "./HomeWinter";
