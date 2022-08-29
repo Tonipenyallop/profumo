@@ -34,7 +34,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npx ts-node index.ts",
+    "start": "npx ts-node index.ts & react-scripts start",
     "dev": "nodemon index.ts & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
