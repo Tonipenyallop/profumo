@@ -14,12 +14,14 @@ export default function Cart({ visibleCart, setVisibleCart, chosenItem }: any) {
 
   useEffect(() => {
     const cart = document.getElementById("cart");
-    if (cart?.classList.contains("top-[-999px]")) {
-      cart?.classList.add("top-0");
-      cart?.classList.remove("top-[-999px]");
-    } else {
+    
+    if (cart?.classList.contains("top-0")) {
       cart?.classList.remove("top-0");
       cart?.classList.add("top-[-999px]");
+    } else {
+      cart?.classList.add("top-0");
+      cart?.classList.remove("top-[-999px]");
+
     }
     getChosenItemImage(chosenItem);
     getChosenItemPrice(chosenItem);
@@ -35,7 +37,7 @@ export default function Cart({ visibleCart, setVisibleCart, chosenItem }: any) {
     <div className="">
       <div
         id="cart"
-        className="z-20 border-2 bg-gray-700 fixed  top-[-999px] right-0 w-[400px]  transition-all duration-1000"
+        className="z-20 border-2 bg-gray-700 fixed top-0 right-0 w-[400px]  transition-all duration-1000"
       >
         <div className="flex mt-3 justify-around items-center  ">
           <img
@@ -53,6 +55,7 @@ export default function Cart({ visibleCart, setVisibleCart, chosenItem }: any) {
             className="white-button"
             onClick={() => {
               setVisibleCart(false);
+              console.log('x was clicked')
             }}
           >
             X
