@@ -37,7 +37,7 @@ export default function Cart({ visibleCart, setVisibleCart, chosenItem }: any) {
     <div className="">
       <div
         id="cart"
-        className="z-20 border-2 bg-gray-700 fixed top-[-999px] right-0 w-[400px]  transition-all duration-1000"
+        className="z-20 border-2 bg-gray-700 fixed top-0 right-0 w-[400px]  transition-all duration-1000"
       >
         <div className="flex mt-3 justify-around items-center  ">
           <img
