@@ -4,7 +4,9 @@ const cors = require("cors");
 const app: Application = express();
 
 const PORT = process.env.PORT || 8888;
-const db = require("../server/db.ts");
+// const db = require("../server/db.ts");
+const db = require("./src/server/db.ts");
+
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 app.use(cors());
