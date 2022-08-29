@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "npx ts-node index.ts",
-    "dev": "nodemon src/server/index.ts",
+    "dev": "nodemon index.ts & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
