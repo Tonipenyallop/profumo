@@ -7,7 +7,7 @@ DO NOT FORGET TO CONFIG VAR
 
 Adding PORT as a config var make occur bug on heroku
 
-
+heroku info APPNAME -> retrieve web url
 
 # Config vars
 DB_USER
