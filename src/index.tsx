@@ -2,11 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import { BrowserRouter as Router } from "react-router-dom";
-
+import _ from 'lodash'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+function component() {
+  const element = document.createElement('div');
+
+  // Lodash, now imported by this script
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
+
 root.render(
   <React.StrictMode>
     <Router>

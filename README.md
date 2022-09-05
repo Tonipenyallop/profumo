@@ -1,63 +1,35 @@
-# Getting Started with Create React App
-install ts node for typescript
-```npm i gotta check ```
+# How to start
+```
+npm start
+```
 
-DO NOT FORGET TO CONFIG VAR
-```PGSSLMODE : no-verify```
+## Website overview
+### Landing Page
+* User can move to other page clicking image of landing page or clicking top var options
+![alt text](./src/images/landing-page-image.png)
 
-Adding PORT as a config var make occur bug on heroku
+### Add item to cart
+* When the user clicks "Add to Cart" button, the cart will be appear from top left corner and a few seconds later, it will disappear 
+![alt text](./src/images/add-to-cart.png)
 
-heroku info APPNAME -> retrieve web url
+### Flipping Card
+* When the user clicks "Detail" button, card starts to flip and user can see the detail of that cologne
+![alt text](./src/images/flipping-card.png)
 
-# Config vars
-DB_USER
-DB_URI
-MODE
-STRIPE_SECRET_KEY
-PORT
-WEB_URL
+### My Cart
+* User can confirm items which added in to cart
+![alt text](./src/images/my-cart.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### User Page
+* User can login or sign up from this page
+![alt text](./src/images/login-signin-page.png)
 
-In the project directory, you can run:
+### Wish List
+* After login, User can check colognes they liked
+![alt text](./src/images/wish-list.png)
 
-### `npm start`
+### Orders
+* User can review their previous order confirmation
+![alt text](./src/images/order-confirmation.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
